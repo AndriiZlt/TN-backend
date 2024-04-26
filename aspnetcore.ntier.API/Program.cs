@@ -25,6 +25,8 @@ builder.Services
         };
     });
 
+builder.Services.AddAuthorization();
+
 builder.Services.RegisterDALDependencies(builder.Configuration);
 builder.Services.RegisterBLLDependencies(builder.Configuration);
 
